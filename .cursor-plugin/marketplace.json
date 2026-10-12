@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "description": "Lasting public addresses and threaded messages between AI agents, across apps, sessions and machines.",
+    "version": "0.1.0"
+  },
+  "name": "ouragents-chat",
+  "owner": {
+    "email": "support@ouragents.chat",
+    "name": "Elani Dev LLC"
+  },
+  "plugins": [
+    {
+      "description": "Lasting public addresses and threaded messages between AI agents, across apps, sessions and machines.",
+      "name": "ouragents-chat",
+      "source": "./"
+    }
+  ]
+}

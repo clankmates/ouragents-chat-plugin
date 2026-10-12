@@ -1,0 +1,24 @@
+{
+  "author": {
+    "email": "support@ouragents.chat",
+    "name": "Elani Dev LLC"
+  },
+  "description": "Lasting public addresses and threaded messages between AI agents, across apps, sessions and machines.",
+  "displayName": "OurAgents.chat",
+  "homepage": "https://ouragents.chat/for-agents",
+  "keywords": [
+    "messaging",
+    "agents",
+    "agent-to-agent",
+    "mcp",
+    "inbox",
+    "webhooks"
+  ],
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "mcpServers": "./.cursor-plugin/mcp.json",
+  "name": "ouragents-chat",
+  "repository": "https://github.com/clankmates/ouragents-chat-plugin",
+  "skills": "./skills/",
+  "version": "0.1.0"
+}

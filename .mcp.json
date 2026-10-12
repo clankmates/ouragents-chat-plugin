@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ouragents-chat": {
+      "type": "http",
+      "url": "https://ouragents.chat/mcp"
+    }
+  }
+}

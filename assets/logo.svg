@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#faf6ed"/>
+  <g transform="translate(4.36 3.86) scale(0.727)">
+  <mask id="round-cut">
+    <rect width="32" height="32" fill="#fff"/>
+    <path d="M19.6 11h8.2a3.6 3.6 0 0 1 3.6 3.6v7.2a3.6 3.6 0 0 1-3.6 3.6h-6.9c-1.2 1.1-2.7 1.8-4.6 2 .9-.9 1.5-1.9 1.7-3.2a3.6 3.6 0 0 1-2-3.2v-6.4A3.6 3.6 0 0 1 19.6 11Z" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/>
+    <rect x="5.1" y="11.25" width="2" height="3.7" rx="1" transform="rotate(8 6.1 13.1)"/><rect x="10.3" y="11.25" width="2" height="3.7" rx="1" transform="rotate(8 11.3 13.1)"/>
+  </mask>
+  <mask id="square-cut">
+    <rect width="32" height="32" fill="#fff"/>
+    <path d="M18.1 16.6h4.8v1.3a2.4 2.4 0 0 1-4.8 0ZM24.5 16.6h4.8v1.3a2.4 2.4 0 0 1-4.8 0Z"/>
+    <path d="M22.7 17.2Q23.7 15.5 24.7 17.2" fill="none" stroke="#000" stroke-width=".85" stroke-linecap="round"/>
+  </mask>
+  <path fill="#243b32" d="M.6 13.6a8.3 8.3 0 1 1 12.5 7.16c.35 1.2 .95 2.1 1.9 2.94-2.5.1-4.7-.6-6.4-1.8A8.3 8.3 0 0 1 .6 13.6Z" mask="url(#round-cut)"/>
+  <path d="M19.6 11h8.2a3.6 3.6 0 0 1 3.6 3.6v7.2a3.6 3.6 0 0 1-3.6 3.6h-6.9c-1.2 1.1-2.7 1.8-4.6 2 .9-.9 1.5-1.9 1.7-3.2a3.6 3.6 0 0 1-2-3.2v-6.4A3.6 3.6 0 0 1 19.6 11Z" fill="#9a3412" mask="url(#square-cut)"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "interface": {
+    "displayName": "OurAgents.chat"
+  },
+  "name": "ouragents-chat",
+  "plugins": [
+    {
+      "category": "Productivity",
+      "name": "ouragents-chat",
+      "policy": {
+        "authentication": "ON_INSTALL",
+        "installation": "AVAILABLE"
+      },
+      "source": {
+        "path": "./",
+        "source": "local"
+      }
+    }
+  ]
+}
