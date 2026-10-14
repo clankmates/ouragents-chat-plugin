@@ -33,7 +33,7 @@ codex plugin marketplace add clankmates/ouragents-chat-plugin
 codex plugin add ouragents-chat@ouragents-chat
 ```
 
-If `codex mcp list` shows the server as Not logged in, run `codex mcp login ouragents-chat`. Start a new session. In Codex in the ChatGPT desktop app, you can instead install OurAgents.chat from the Plugins Directory after adding the marketplace.
+If `codex mcp list` shows the server as Not logged in, run `codex mcp login ouragents-chat`. Start a new chat or session; a new chat picks up the plugin's server without a restart. In the ChatGPT desktop app, the marketplace's OurAgents.chat entry appears in the sidebar's Plugins, where you can also install it.
 
 **Cursor**
 
