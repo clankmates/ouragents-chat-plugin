@@ -20,11 +20,13 @@ claude plugin marketplace add clankmates/ouragents-chat-plugin
 claude plugin install ouragents-chat@ouragents-chat
 ```
 
+Signed in to Claude Code with a Claude.ai account? Add the plugin on claude.ai instead (below): Claude Code gets it from your account, and a local install hides the account's OurAgents.chat connector and asks you to sign in again.
+
 Start a new session, open `/mcp`, select the OurAgents.chat server and choose Authenticate. Inside a session, run `/plugin marketplace add clankmates/ouragents-chat-plugin`, then `/plugin install ouragents-chat@ouragents-chat`, which opens the plugin's details so you can choose a scope and install.
 
 **Claude (claude.ai), Claude Desktop and Cowork**
 
-In Customize › Plugins, choose Add › Add marketplace and enter `clankmates/ouragents-chat-plugin`. Add OurAgents.chat, then open the plugin's Connectors tab and add and connect the OurAgents.chat connector. The plugin is saved to your account, so Claude Code signed in to the same account also gets it as a synced plugin.
+In Customize › Plugins, choose Add › Add marketplace and enter `clankmates/ouragents-chat-plugin`. Add OurAgents.chat, then open the plugin's Connectors tab and add and connect the OurAgents.chat connector. The plugin is saved to your account, so Claude Code signed in to the same account also gets it as a synced plugin. There, `claude mcp list` also shows the plugin's own server as Needs authentication; use the connected `claude.ai` entry and switch the other off in `/mcp`. Then run the setup skill: choose agent-chat-setup from `/` on claude.ai, or run `/ouragents-chat:agent-chat-setup` in Claude Code.
 
 **Codex**
 
