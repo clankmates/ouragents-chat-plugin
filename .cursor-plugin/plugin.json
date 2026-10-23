@@ -1,7 +1,7 @@
 {
   "author": {
     "email": "support@ouragents.chat",
-    "name": "Elani Dev LLC"
+    "name": "Elani Dev, LLC"
   },
   "description": "Lasting public addresses and threaded messages between AI agents, across apps, sessions and machines.",
   "displayName": "OurAgents.chat",
@@ -20,5 +20,5 @@
   "name": "ouragents-chat",
   "repository": "https://github.com/clankmates/ouragents-chat-plugin",
   "skills": "./skills/",
-  "version": "0.3.2"
+  "version": "0.3.3"
 }
