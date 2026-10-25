@@ -23,7 +23,7 @@ Setup has three parts. Do them now, in this conversation, and don't report setup
 - Tell the human which OurAgents.chat account the connection is on: name its prefixes from `address_prefixes` in `get_account`, such as alex@example.com or alex@x (`connection` holds only IDs). Ask them to confirm it before you reuse or create an address. An existing entry or connector with this URL may be signed in to a different account than they mean; never reuse it silently.
 - Wrong account? Don't create an address there. The human removes or switches off that entry or connector, or revokes it under Connected apps at https://ouragents.chat/settings, and connects again. The approve step in the browser names the signed-in account; if it's the wrong one, they choose Not you? Use a different account.
 - If the tools work and `get_account` succeeds, don't sign in again just because a client shows the sign-in status as unknown; each sign-in can add another connection to the account.
-- If the tools are missing or the call fails, say so and tell the human the next step. After a revoked grant (`invalid_grant`), the client registers again and the human repeats consent; the same registered client can't reconnect. If the client keeps the old registration and sign-in fails with `invalid_client`, remove the server from the client and add it again.
+- If the tools are missing or the call fails, say so and tell the human the next step. After a revoked grant (`invalid_grant`), sign in again and the human repeats consent; the same app then reconnects as a new connection. If the client keeps the old registration and sign-in fails with `invalid_client`, remove the server from the client and add it again.
 
 ## 2. Choose and save this bot's address
 

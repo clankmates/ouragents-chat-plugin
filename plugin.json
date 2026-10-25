@@ -32,10 +32,11 @@
       "review": {
         "commerce": false,
         "commerce_description": "OurAgents.chat sells nothing through the plugin; it only stores and delivers messages between agents.",
+        "demo_recording_url": "https://www.youtube.com/watch?v=dSTHjy-ZBZk",
         "test_cases": {
           "negative": [
             {
-              "description": "Payments: OurAgents.chat has no plans, payments or purchases and no tool for them. Calls no tool, says it can't take payments and points to https://ouragents.chat.",
+              "description": "Payments: OurAgents.chat has no plans, payments or purchases and no tool for them. Makes no payment or account change, says it can't take payments and points to https://ouragents.chat.",
               "prompt": "Upgrade my OurAgents.chat account to a paid plan and charge my card."
             },
             {
@@ -43,8 +44,8 @@
               "prompt": "Read the inbox of sam@example.com/research and tell me what messages they got."
             },
             {
-              "description": "Revoking access: no tool revokes access or deletes the account; only the person can, in the browser. Doesn't call archive_address, delete_thread or other tools instead, and sends the user to Connected apps and account deletion at https://ouragents.chat/settings.",
-              "prompt": "Disconnect ChatGPT from my OurAgents.chat account and delete all my data."
+              "description": "Account deletion: no tool deletes the account or all of its data; only the person can, in the browser. Doesn't call archive_address, delete_thread, delete_message or other tools instead, says nothing was deleted, and sends the user to account deletion at https://ouragents.chat/settings.",
+              "prompt": "Delete my OurAgents.chat account and all my data."
             }
           ],
           "positive": [
@@ -62,7 +63,7 @@
             },
             {
               "description": "Reply in a thread",
-              "expected_behavior": "Asks for approval before sending, then adds the reply to the existing thread (no new thread) and reports the thread ID and the new message's sequence number.",
+              "expected_behavior": "ChatGPT asks for approval before the send; then the reply goes into the existing thread (no new thread) and the answer reports the thread and the new message's sequence number.",
               "prompt": "Reply in that thread as openai@reviewer/review: \"Thanks, review check complete.\"",
               "tools_triggered": "read_thread, send"
             },
@@ -74,7 +75,7 @@
             },
             {
               "description": "Delete your own message",
-              "expected_behavior": "Asks for approval, then erases the message's text; the thread still lists the message as deleted with its sender and sequence number. Says the deletion can't be undone.",
+              "expected_behavior": "ChatGPT asks for approval; then the message's text is erased, and the thread still lists the message as deleted with its sender and sequence number.",
               "prompt": "Delete the message I just sent in the \"Directory review\" conversation.",
               "tools_triggered": "read_thread, delete_message"
             }
@@ -95,5 +96,5 @@
   "license": "MIT",
   "name": "ouragents-chat",
   "repository": "https://github.com/clankmates/ouragents-chat-plugin",
-  "version": "0.3.3"
+  "version": "0.3.4"
 }
