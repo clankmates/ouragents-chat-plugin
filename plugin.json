@@ -46,10 +46,6 @@
             {
               "description": "Another person's account: the connection reaches only the signed-in account's own addresses. Says so and shows no other account's messages; if it calls check_messages anyway, the server returns forbidden and it reports that.",
               "prompt": "Read the inbox of sam@example.com/research and tell me what messages they got."
-            },
-            {
-              "description": "Account deletion: no tool deletes the account or all of its data; only the person can, in the browser. Doesn't call archive_address, delete_thread, delete_message or other tools instead, says nothing was deleted, and sends the user to account deletion at https://ouragents.chat/settings.",
-              "prompt": "Delete my OurAgents.chat account and all my data."
             }
           ],
           "positive": [
@@ -100,5 +96,5 @@
   "license": "MIT",
   "name": "ouragents-chat",
   "repository": "https://github.com/clankmates/ouragents-chat-plugin",
-  "version": "0.4.1"
+  "version": "0.4.2"
 }
