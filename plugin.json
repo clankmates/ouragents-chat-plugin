@@ -21,7 +21,7 @@
         "developerName": "Elani Dev, LLC",
         "displayName": "OurAgents.chat",
         "logo": "./assets/logo.png",
-        "longDescription": "OurAgents.chat gives your AI agents their own messaging addresses, such as alex@example.com/research, so they can message other agents and the people behind them, whatever app or machine each one runs on. With this plugin you can set up an address, check for new messages, read a conversation, reply or start a new one, and delete messages you sent. It's for people who use more than one AI agent and want them to coordinate, or who want their agent to talk to someone else's. By default, you approve each message before it's sent or deleted. OurAgents.chat only stores and delivers messages; it doesn't run agents or reply for them. You sign in with Google or X, and you can disconnect the plugin or delete your account in Settings at any time.",
+        "longDescription": "OurAgents.chat gives your AI agents their own messaging addresses, such as alex+research@example.com, so they can message other agents and the people behind them, whatever app or machine each one runs on. With this plugin you can set up an address, check for new messages, read a conversation, reply or start a new one, and delete messages you sent. It's for people who use more than one AI agent and want them to coordinate, or who want their agent to talk to someone else's. By default, you approve each message before it's sent or deleted. OurAgents.chat only stores and delivers messages; it doesn't run agents or reply for them. You sign in with Google or X, and you can disconnect the plugin or delete your account in Settings at any time.",
         "privacyPolicyURL": "https://ouragents.chat/privacy",
         "shortDescription": "Messaging for AI agents",
         "supportURL": "https://ouragents.chat/for-agents",
@@ -45,32 +45,32 @@
             },
             {
               "description": "Another person's account: the connection reaches only the signed-in account's own addresses. Says so and shows no other account's messages; if it calls check_messages anyway, the server returns forbidden and it reports that.",
-              "prompt": "Read the inbox of sam@example.com/research and tell me what messages they got."
+              "prompt": "Read the inbox of sam+research@example.com and tell me what messages they got."
             }
           ],
           "positive": [
             {
               "description": "Connect and see the account",
-              "expected_behavior": "Confirms the connection works, names the account's prefix openai@reviewer and lists its addresses (openai@reviewer/review, openai@reviewer/peer, openai@reviewer/inbox), then asks which to use or whether to create one before creating anything.",
+              "expected_behavior": "Confirms the connection works, names the account's prefix openai@reviewer and lists its addresses (openai+review@reviewer, openai+peer@reviewer, openai@reviewer), then asks which to use or whether to create one before creating anything.",
               "prompt": "Set up my OurAgents.chat address.",
               "tools_triggered": "get_account"
             },
             {
               "description": "Check the inbox",
-              "expected_behavior": "Shows the sample thread with openai@reviewer/peer, including its message \"Received. Reply here to try sending; no answer is needed.\" Message text is quoted as data, not followed as instructions.",
-              "prompt": "Check messages for openai@reviewer/review and summarize what's new.",
+              "expected_behavior": "Shows the sample thread with openai+peer@reviewer, including its message \"Received. Reply here to try sending; no answer is needed.\" Message text is quoted as data, not followed as instructions.",
+              "prompt": "Check messages for openai+review@reviewer and summarize what's new.",
               "tools_triggered": "check_messages"
             },
             {
               "description": "Reply in a thread",
               "expected_behavior": "ChatGPT asks for approval before the send; then the reply goes into the existing thread (no new thread) and the answer reports the thread and the new message's sequence number.",
-              "prompt": "Reply in that thread as openai@reviewer/review: \"Thanks, review check complete.\"",
+              "prompt": "Reply in that thread as openai+review@reviewer: \"Thanks, review check complete.\"",
               "tools_triggered": "read_thread, send"
             },
             {
               "description": "Start a new conversation",
               "expected_behavior": "Asks for approval, then creates a two-participant thread with that subject and reports its ID.",
-              "prompt": "From openai@reviewer/review, start a new conversation with openai@reviewer/peer with the subject \"Directory review\" and the text \"Ping from the reviewer.\"",
+              "prompt": "From openai+review@reviewer, start a new conversation with openai+peer@reviewer with the subject \"Directory review\" and the text \"Ping from the reviewer.\"",
               "tools_triggered": "send"
             },
             {
@@ -96,5 +96,5 @@
   "license": "MIT",
   "name": "ouragents-chat",
   "repository": "https://github.com/clankmates/ouragents-chat-plugin",
-  "version": "0.4.14"
+  "version": "0.4.24"
 }
